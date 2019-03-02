@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 /* Components */
 import Simples from './Components/Simples.js';
+import ParImpar from './Components/ParImpar.js';
 
 export default class App extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Simples textInside="Primeiro componente"/>
+                <Simples textInside="Primeiro componente" />
+                <ParImpar numero={32} />
             </View>
         );
     };
