@@ -6,10 +6,17 @@ import Simples from './Components/Simples.js';
 import ParImpar from './Components/ParImpar.js';
 import { Inverter, MegaSena } from './Components/Multi.js';
 import Contador from './Components/Contador.js';
+import ValidarProps from './Components/ValidarProps.js';
 
 export default createDrawerNavigator({
+    ValidarProps: {
+        screen: () => <ValidarProps ano={19} />,
+        navigationOptions: {
+            title: 'Validar Propriedades',
+        }
+    },
     Contador: {
-        screen: () => <Contador contador={8} />, 
+        screen: () => <Contador contador={8} />,
     },
     MegaSena: {
         screen: () => <MegaSena tamanho={8} />,
