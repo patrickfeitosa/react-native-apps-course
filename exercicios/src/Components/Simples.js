@@ -1,6 +1,8 @@
 import React from 'react';
 import { Text } from 'react-native';
 
+import Padrao from './../Style/MainStyle.js';
+
 export default ({ textInside }) => (
-    <Text>{textInside}</Text>
+    <Text style={Padrao.ex}>{textInside}</Text>
 );
