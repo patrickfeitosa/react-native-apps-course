@@ -10,8 +10,12 @@ import ValidarProps from './Components/ValidarProps.js';
 import Evento from './Components/Evento.js';
 import { Avo } from './Components/ComunicacaoDireta.js';
 import AlunosFlex from './Components/AlunosFlex.js';
+import Flex from './Components/Flex.js';
 
 export default createDrawerNavigator({
+    Flex: {
+        screen: Flex,
+    },
     AlunosFlex: {
         screen: AlunosFlex,
         navigationOptions: { title: 'Lista Flex' },
