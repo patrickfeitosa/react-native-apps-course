@@ -9,10 +9,15 @@ import Contador from './Components/Contador.js';
 import ValidarProps from './Components/ValidarProps.js';
 import Evento from './Components/Evento.js';
 import { Avo } from './Components/ComunicacaoDireta.js';
+import AlunosFlex from './Components/AlunosFlex.js';
 
 export default createDrawerNavigator({
+    AlunosFlex: {
+        screen: AlunosFlex,
+        navigationOptions: { title: 'Lista Flex' },
+    },
     Avo: {
-        screen: () => <Avo nome='João' sobrenome='Silva'/>
+        screen: () => <Avo nome='João' sobrenome='Silva' />
     },
     Evento: {
         screen: () => <Evento />
