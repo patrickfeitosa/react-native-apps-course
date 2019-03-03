@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+
+// Components
 import Button from './Components/Button.js';
+import Display from './Components/Display.js';
 
 const buttons = [
     { label: 'AC', key: `${Math.random()}` },
@@ -33,9 +36,14 @@ const styles = StyleSheet.create({
 });
 
 export default class App extends Component {
+    state = {
+        displayValue: '0',
+    };
+
     render() {
         return (
             <View style={styles.container}>
+                <Display value={this.state.displayValue} />
                 <View style={styles.buttons}>
                     {buttons.map(({ label, key }) => (
                         <Button label={label} key={key} />
